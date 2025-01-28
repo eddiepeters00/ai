@@ -19,7 +19,7 @@ export const extractDataFromPdf = async (pdfPath: string) => {
   const { object } = await generateObject({
     model: anthropic("claude-3-5-sonnet-latest"),
     system:
-      "Ypu will recieve a pdf. " + "Please extract the data from the pdf.",
+      "You will recieve a pdf. " + "Please extract the data from the pdf.",
     schema,
     messages: [
       {
